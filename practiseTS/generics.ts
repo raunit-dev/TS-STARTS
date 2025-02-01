@@ -7,9 +7,8 @@ let ans3=gen<number|string|{name:string,age:number}>([1,"one",{
     name:"raunit",
     age:19
 }])
-
 console.log(ans3);
-console.log(ans2);
+console.log(ans2.toUpperCase());
 console.log(ans1);
 
 
