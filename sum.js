@@ -1,17 +1,18 @@
+"use strict";
 function calc(a, b, meth) {
     var _a, _b;
-    var operations = {
-        sum: function (a, b) { return a + b; },
-        mul: function (a, b) { return a * b; },
-        div: function (a, b) { return a / b; },
-        sub: function (a, b) { return a - b; },
+    const operations = {
+        sum: (a, b) => a + b,
+        mul: (a, b) => a * b,
+        div: (a, b) => a / b,
+        sub: (a, b) => a - b,
     };
     return (_b = (_a = operations[meth]) === null || _a === void 0 ? void 0 : _a.call(operations, a, b)) !== null && _b !== void 0 ? _b : -1;
 }
-var method = ["sum", "mul", "div", "sub"];
-method.forEach(function (method) {
-    var result = calc(10, 10, method);
-    console.log("".concat(method, " ").concat(result));
+const method = ["sum", "mul", "div", "sub"];
+method.forEach((method) => {
+    const result = calc(10, 10, method);
+    console.log(`${method} ${result}`);
 });
 // type Shape = {circle|rectangle|anyshape}
 // function summa(person:Person) 

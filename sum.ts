@@ -96,23 +96,6 @@ method.forEach((method)=>{
 //     gender: "male",orientation: "gay",pronouns:"her" }}
 //    };
 //    console.log(person)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 interface Person {
     name:string,
     age: number
