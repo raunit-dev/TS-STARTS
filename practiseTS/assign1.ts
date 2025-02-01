@@ -23,14 +23,42 @@
 // console.log(ansE);
 // console.log(ansF);
 
-function swappie<T>(a:T,b:T) {
-  return [b,a];
-}
+// function swappie<T>(a:T,b:T) {
+//   return [b,a];
+// }
 
-let answer=swappie(1,2);
-let answer2=swappie("raunit","rishi");
+// let answer=swappie(1,2);
+// let answer2=swappie("raunit","rishi");
 
-console.log(answer);
-console.log(answer2);
+// console.log(answer);
+// console.log(answer2);
+
+//-------------------------------------------------------------------------------
+
+// way 1 
+// function swappie<T,X>(a:T,b:X) {
+//     return [b,a];
+//   }
+  
+//   let answer=swappie(1,"raunit");
+  
+//   console.log(answer);
+  //------------------------------------------------------------
+  //way-2
+//   function swappie2<T>(a:T,b:T) {
+//     return [b,a];
+//   }
+
+//   let answer2=swappie2<number|string>(1,"raunit");
+  
+//   console.log(answer2);
+
+  const swappie=<T,X>(a:T,b:X) => {
+    return [b,a];
+  }
+  
+  let answer=swappie(1,"raunit");
+  
+  console.log(answer);
  
 
