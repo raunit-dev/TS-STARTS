@@ -31,8 +31,15 @@ interface Todo {
     id:number,
 }
 
-type UpdateTodo=Partial<Todo>
 
+// interface UpdateTodo {
+//     title?:string|undefined,
+//     description?:string|undefined,
+//     done?:boolean,
+//     id:number,
+// }
+
+type UpdateTodo=Partial<Todo>
 
 function update (id:Todo["id"],newProp: UpdateTodo)
 {
