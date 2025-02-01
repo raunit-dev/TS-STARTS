@@ -1,5 +1,5 @@
-function gen<T>(a:T[]) {
-    return a[2];
+function gen<T>(a:T[]):T{
+    return a[2]
 }
 let ans1=gen<number>([1,2,3,4,5])
 let ans2=gen<string>(["raunit","rishi","sona"])
